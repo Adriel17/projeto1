@@ -6,8 +6,8 @@ function verificar(){
     for(i = 0; i < lista.length - 1; i++){
     if(email == lista[0]){
         window.location.href = "arquivos.html";
-    } else{
-        console.log("false");
+    } else if(email == lista[1]) {
+        window.location.href = "arquivos1.html";
     }
 }
     
