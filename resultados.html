@@ -5,12 +5,12 @@
 </head>
 <body>
               <nav>
-                <div class="nav-wrapper teal darken-2 z-depth-2">
-                  <a href="#!" class="brand-logo center">Logo</a>
+                <div class="nav-wrapper blue darken-2 z-depth-2">
+                  <a href="inicial.html" class="brand-logo center"><img src="logo2.png" style="height: 64px;"></a>
                   <ul class="left hide-on-med-and-down">
-                    <li><a href="#">Pacotes</a></li>
-                    <li><a href="#">Relatos</a></li>
-                     <li><a href="#">Dúvidas</a></li>
+                    <li><a href="pacotes.html">Pacotes</a></li>
+                    <li><a href="inicial.html">Relatos</a></li>
+                     <li><a href="duvidas.html">Dúvidas</a></li>
                   </ul>
                 </div>
               </nav>
@@ -23,12 +23,21 @@
                     <input placeholder="Digite seu Email" id="email" type="text" class="validate">
                     <label for="first_name">Email</label>
             </div>
+            <div class="input-field">
+              <input placeholder="Digite sua Senha" id="senha" type="password" class="validate">
+              <label for="first_name">Senha</label>
+            </div>
+            <div id="aviso"></div>
+            <div><a onclick="open()">Criar conta</a></div>
             <div class="card-action">
                     <a class="waves-effect waves-light btn" onclick="verificar()">Entrar</a>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div id="aba"></div>
+
       <div class="divider"></div>
       <script type="text/javascript" src="resultados.js"></script>
       <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
