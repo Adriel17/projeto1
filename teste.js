@@ -1,14 +1,31 @@
 $(document).ready(function(){
-	 $('select').formSelect();
-var resultadoP;
-window.enviar = function(){
 
-if ($("b11").prop("checked")==true && $("#b12").prop("checked")==false) {
-	if ($("b21").prop("checked")==true && $("#b2 2").prop("checked")==false) {
-		}else if ($("#b22").prop("checked")) {}	
+$("#asd").click(()=>{
 
-}else if ($("b11").prop("checked")==false && $("#b12").prop("checked")==true) {
-	resultadoP = "é o pai";
-}
+var nome = $("#Nome").val();
+var sobre = $("#sobrenomeC").val();
 
-}})
+if (nome!="" && sobre!=""){
+	if ($("#b11").is(':checked')) {
+		if ($("#b22").is(':checked')) {
+			$("#card").css("display", "block");
+			$("#resultado").empty();
+			$("#resultado").append("<h4 class='green-text text-darken-1'>Você não é pai de "+nome+" "+sobre+"</h4>");
+		}else if ($("#b21").is(':checked')) {
+			$("#card").css("display", "block");
+			$("#resultado").empty();
+			$("#resultado").append("<h4 class='amber-text text-darken-3'>Você é o pai de "+nome+" "+sobre+"<h4>");
+		}
+}else if ($("#b12").is(':checked')) {
+	$("#card").css("display", "block");
+	$("#resultado").empty();
+	$("#resultado").append("<h4 class='green-text text-darken-1'>Você não é pai de "+nome+" "+sobre+"</h4>");
+}}else{		$("#card").css("display", "block");
+			$("#resultado").empty();
+			$("#resultado").append("<h4 class='red-text text-accent-4'>Preencha os campos requeridos!</h4>");
+			}
+			}
+		)
+	}
+)
+

@@ -1,8 +1,8 @@
 
 
 function verificar(){
-    var lista = ["vinicius@gmail.com", "adriel@hotmail.com"];
-    var pass = ["vb729401", "adriel4578"];
+    var lista = ["vinicius@gmail.com", "adriel@gmail.com"];
+    var pass = ["vb729401", "adriel1711"];
     var email = $("#email").val();
     var senha = $("#senha").val();
 
